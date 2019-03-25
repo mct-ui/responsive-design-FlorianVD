@@ -235,9 +235,9 @@ a:focus {
     flex-wrap: wrap;
 }
 
-    .o-layout__item {
-        width: 100%;
-    }
+.o-layout__item {
+    width: 100%;
+}
 
 /* gutter modifiers, these affect o-layout__item too */
 
@@ -417,6 +417,28 @@ a:focus {
 
     .c-nav__link {
         padding: 8px 16px;
+    }
+}
+
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+
+.c-header__nav {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .c-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .c-header__nav {
+        display: block;
     }
 }
 
