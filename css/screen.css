@@ -618,8 +618,8 @@ a:focus {
     color: white;
 }
 
-.c-link-cta::after{
-    background: white;
+.c-link-cta--inverse::after {
+    background-color: white;
 }
 
 .c-link-cta--inverse:hover {
@@ -629,6 +629,60 @@ a:focus {
 .c-link-cta--inverse:hover::after {
     background-color: white;
 }
+
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-footer__logo {
+    width: 100%;
+}
+
+.c-footer__nav {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+        justify-content: center;    
+    }
+
+    .c-footer__logo {
+        text-align: center;
+    }
+
+    .c-footer__nav{
+        width: unset;
+    }
+
+    .c-footer__nav .o-list{
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+        justify-content: space-between;
+    }
+
+    .c-footer__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .c-footer__nav {
+        width: unset;
+    }
+}
+
 
 /*------------------------------------*\
   #UTILITIES
